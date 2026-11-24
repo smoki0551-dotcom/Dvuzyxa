@@ -1,0 +1,6 @@
+{
+  "appId": "com.dvizhuha.kivok",
+  "appName": "Движуха Кивок",
+  "webDir": ".",
+  "bundledWebRuntime": false
+}

@@ -1,0 +1,17 @@
+ДВИЖУХА КИВОК — сборка Android APK
+
+Сейчас ZIP содержит игру и исходную конфигурацию для Android-обёртки Capacitor. APK не собран: в среде создания отсутствуют Android SDK и Gradle.
+
+Чтобы собрать APK на Windows:
+1. Установите Node.js LTS, Android Studio и Android SDK.
+2. Распакуйте проект.
+3. В PowerShell в папке KIVKOVATOR выполните:
+   npm install
+   npx cap add android
+   npx cap sync android
+   npx cap open android
+4. В Android Studio дождитесь синхронизации Gradle.
+5. Build > Build Bundle(s) / APK(s) > Build APK(s).
+6. APK будет в android/app/build/outputs/apk/debug/app-debug.apk.
+
+Сохранения работают в браузере через localStorage. В Android WebView они остаются локальными при обычном использовании и обновлениях приложения, если не очищать данные приложения.
